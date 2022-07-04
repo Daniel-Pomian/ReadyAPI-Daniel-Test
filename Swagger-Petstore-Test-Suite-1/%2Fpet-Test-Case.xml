@@ -148,7 +148,13 @@
   <con:testStep type="groovy" name="Groovy Script" id="dde0c28c-5a19-4582-a600-912c5e83877e">
     <con:settings/>
     <con:config>
-      <script>line one</script>
+      <script>line one
+
+line two
+
+foo foo
+
+bar bar</script>
     </con:config>
   </con:testStep>
   <con:properties/>

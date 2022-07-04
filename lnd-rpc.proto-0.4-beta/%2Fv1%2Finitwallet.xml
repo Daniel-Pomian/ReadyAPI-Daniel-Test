@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/initwallet" path="/v1/initwallet" id="41084b1c-cd82-4f55-bb7c-afa4657e0204" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="41084b1c-cd82-4f55-bb7c-afa4657e0204" name="/v1/initwallet" path="/v1/initwallet" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="41084b1c-cd82-4f55-bb7c-afa4657e0204fileName">%2Fv1%2Finitwallet</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="InitWallet" id="4a59c883-9b39-4240-83ee-d111f770ae08" method="POST">
+  <con:method id="4a59c883-9b39-4240-83ee-d111f770ae08" method="POST" name="InitWallet">
     <con:description>In the case of a recovery scenario, the user can also specify their aezeed
 mnemonic and passphrase. If set, then the daemon will use this prior state
 to initialize its internal wallet.
@@ -34,7 +34,7 @@ on disk.</con:description>
       <con:params/>
       <con:sampleContent>{ }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="351ad5e0-6e8c-43a6-ba8e-144fab5de6ea" mediaType="application/json">
+    <con:request id="351ad5e0-6e8c-43a6-ba8e-144fab5de6ea" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:request>{\r

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction name="/v2/pet" method="PUT" resourcePath="/v2/pet" id="c1596f6c-3957-443a-bd8c-b173931294ad" xmlns:con="http://eviware.com/soapui/config">
+<con:restMockAction id="c1596f6c-3957-443a-bd8c-b173931294ad" method="PUT" name="/v2/pet" resourcePath="/v2/pet" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c1596f6c-3957-443a-bd8c-b173931294adfileName">%2Fv2%2Fpet1</con:setting>
   </con:settings>
@@ -7,27 +7,27 @@
   <con:dispatchConfig/>
   <con:dispatchXPath/>
   <con:routeScript/>
-  <con:response name="Response 1" id="caaf17de-8eed-49d8-ba7a-cb51fc67d5a7" httpResponseStatus="400" mediaType="application/xml" dataSource="">
+  <con:response dataSource="" httpResponseStatus="400" id="caaf17de-8eed-49d8-ba7a-cb51fc67d5a7" mediaType="application/xml" name="Response 1">
     <con:settings/>
     <con:responseContent/>
   </con:response>
-  <con:response name="Response 2" id="f36436ad-28d2-48f5-ac02-08f1e1acd725" httpResponseStatus="400" mediaType="application/json" dataSource="">
+  <con:response dataSource="" httpResponseStatus="400" id="f36436ad-28d2-48f5-ac02-08f1e1acd725" mediaType="application/json" name="Response 2">
     <con:settings/>
     <con:responseContent/>
   </con:response>
-  <con:response name="Response 3" id="4b8861c5-94dc-4f73-8fb6-1b6361511cba" httpResponseStatus="404" mediaType="application/xml" dataSource="">
+  <con:response dataSource="" httpResponseStatus="404" id="4b8861c5-94dc-4f73-8fb6-1b6361511cba" mediaType="application/xml" name="Response 3">
     <con:settings/>
     <con:responseContent/>
   </con:response>
-  <con:response name="Response 4" id="679676a9-9ae0-4a3b-8bfd-c8e5c7568f2a" httpResponseStatus="404" mediaType="application/json" dataSource="">
+  <con:response dataSource="" httpResponseStatus="404" id="679676a9-9ae0-4a3b-8bfd-c8e5c7568f2a" mediaType="application/json" name="Response 4">
     <con:settings/>
     <con:responseContent/>
   </con:response>
-  <con:response name="Response 5" id="e1796f44-a7b1-4257-9553-7c195f49e73d" httpResponseStatus="405" mediaType="application/xml" dataSource="">
+  <con:response dataSource="" httpResponseStatus="405" id="e1796f44-a7b1-4257-9553-7c195f49e73d" mediaType="application/xml" name="Response 5">
     <con:settings/>
     <con:responseContent/>
   </con:response>
-  <con:response name="Response 6" id="30d0a44c-0c3b-49a6-84dc-e3f913b74ee2" httpResponseStatus="405" mediaType="application/json" dataSource="">
+  <con:response dataSource="" httpResponseStatus="405" id="30d0a44c-0c3b-49a6-84dc-e3f913b74ee2" mediaType="application/json" name="Response 6">
     <con:settings/>
     <con:responseContent/>
   </con:response>

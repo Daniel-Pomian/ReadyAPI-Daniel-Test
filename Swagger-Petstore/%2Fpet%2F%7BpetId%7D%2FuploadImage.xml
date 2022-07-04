@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" id="fb0bab01-ff78-49c5-88e3-cb2f4605b4e1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="fb0bab01-ff78-49c5-88e3-cb2f4605b4e1" name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="fb0bab01-ff78-49c5-88e3-cb2f4605b4e1fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage</con:setting>
   </con:settings>
@@ -11,7 +11,7 @@
       <con:description>ID of pet to update</con:description>
     </con:parameter>
   </con:parameters>
-  <con:method name="uploadFile" id="b4f04b23-d6e5-4b78-8635-cac500cc5bb2" method="POST">
+  <con:method id="b4f04b23-d6e5-4b78-8635-cac500cc5bb2" method="POST" name="uploadFile">
     <con:description>uploads an image</con:description>
     <con:settings/>
     <con:parameters>
@@ -40,7 +40,7 @@
       <con:mediaType>multipart/form-data</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="6bfb05e0-0638-4036-b2c7-6ab7fdd14946" mediaType="application/json">
+    <con:request id="6bfb05e0-0638-4036-b2c7-6ab7fdd14946" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:credentials>

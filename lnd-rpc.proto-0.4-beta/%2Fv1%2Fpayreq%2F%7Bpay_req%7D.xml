@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/payreq/{pay_req}" path="/v1/payreq/{pay_req}" id="e8271d3a-083c-4ade-8d5b-58793d6f45ea" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="e8271d3a-083c-4ade-8d5b-58793d6f45ea" name="/v1/payreq/{pay_req}" path="/v1/payreq/{pay_req}" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="e8271d3a-083c-4ade-8d5b-58793d6f45eafileName">%2Fv1%2Fpayreq%2F%7Bpay_req%7D</con:setting>
   </con:settings>
@@ -7,10 +7,10 @@
     <con:parameter required="true">
       <con:name>pay_req</con:name>
       <con:style>TEMPLATE</con:style>
-      <con:description xsi:nil="true"/>
+      <con:description/>
     </con:parameter>
   </con:parameters>
-  <con:method name="DecodePayReq" id="63feab3d-938a-46e0-b66a-3b607eb67acd" method="GET">
+  <con:method id="63feab3d-938a-46e0-b66a-3b607eb67acd" method="GET" name="DecodePayReq">
     <con:description>* lncli: `decodepayreq`
 DecodePayReq takes an encoded payment request string and attempts to decode
 it, returning a full description of the conditions encoded within the
@@ -33,7 +33,7 @@ payment request.</con:description>
   "cltv_expiry" : "string"
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="488e1e0a-b5c7-42f1-9c65-548007ef54cd" mediaType="application/json">
+    <con:request id="488e1e0a-b5c7-42f1-9c65-548007ef54cd" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="947b5f69-cbba-4eba-af5e-4b69069fd65d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/user/createWithList Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="947b5f69-cbba-4eba-af5e-4b69069fd65d" keepSession="false" name="/user/createWithList Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>The test case generated for the REST resource [/user/createWithList] located at [/user/createWithList]</con:description>
   <con:settings>
     <con:setting id="947b5f69-cbba-4eba-af5e-4b69069fd65dfileName">%2Fuser%2FcreateWithList-Test-Case</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="Request 1" id="46bb86fa-9064-47e7-b9ba-37c10eb2cd70">
+  <con:testStep id="46bb86fa-9064-47e7-b9ba-37c10eb2cd70" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/user/createWithList" methodName="createUsersWithListInput" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="e33319ab-80bd-4adb-8ca3-b416e0865ee5" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="createUsersWithListInput" resourcePath="/v2/user/createWithList" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="e33319ab-80bd-4adb-8ca3-b416e0865ee5" mediaType="application/json" name="Request 1">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>

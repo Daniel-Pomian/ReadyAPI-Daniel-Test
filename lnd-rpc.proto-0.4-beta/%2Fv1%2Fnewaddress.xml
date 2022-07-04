@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/newaddress" path="/v1/newaddress" id="28a2e6da-7d93-4f5d-8db7-660d2e92887c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="28a2e6da-7d93-4f5d-8db7-660d2e92887c" name="/v1/newaddress" path="/v1/newaddress" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="28a2e6da-7d93-4f5d-8db7-660d2e92887cfileName">%2Fv1%2Fnewaddress</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="NewWitnessAddress" id="e23413ae-836a-4d8c-aa10-582a147324ca" method="GET">
+  <con:method id="e23413ae-836a-4d8c-aa10-582a147324ca" method="GET" name="NewWitnessAddress">
     <con:description>*
 NewWitnessAddress creates a new witness address under control of the local wallet.</con:description>
     <con:settings/>
@@ -17,7 +17,7 @@ NewWitnessAddress creates a new witness address under control of the local walle
   "address" : "string"
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="bab47560-8656-4a64-91f4-e7e1f347d2ea" mediaType="application/json">
+    <con:request id="bab47560-8656-4a64-91f4-e7e1f347d2ea" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

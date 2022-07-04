@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/user/createWithArray" path="/user/createWithArray" id="a7685048-06b8-420a-bd80-abfa5284543e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="a7685048-06b8-420a-bd80-abfa5284543e" name="/user/createWithArray" path="/user/createWithArray" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="a7685048-06b8-420a-bd80-abfa5284543efileName">%2Fuser%2FcreateWithArray</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="createUsersWithArrayInput" id="dcd34aad-d14c-4b07-bc16-aafff6361e63" method="POST">
+  <con:method id="dcd34aad-d14c-4b07-bc16-aafff6361e63" method="POST" name="createUsersWithArrayInput">
     <con:description>Creates list of users with given input array</con:description>
     <con:settings/>
     <con:parameters/>
@@ -18,7 +18,7 @@
       <con:status/>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="e7ae0a5d-d718-4541-9a87-ed964d5ca2b8" mediaType="application/json">
+    <con:request id="e7ae0a5d-d718-4541-9a87-ed964d5ca2b8" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:credentials>

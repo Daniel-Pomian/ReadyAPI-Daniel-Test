@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="ef7c9584-529d-481e-86b2-2c926b1bd5c1" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/store/order/{orderId} Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="ef7c9584-529d-481e-86b2-2c926b1bd5c1" keepSession="false" name="/store/order/{orderId} Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>The test case generated for the REST resource [/store/order/{orderId}] located at [/store/order/{orderId}]</con:description>
   <con:settings>
     <con:setting id="ef7c9584-529d-481e-86b2-2c926b1bd5c1fileName">%2Fstore%2Forder%2F%7BorderId%7D-Test-Case</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="Request 1" id="3b174aa6-d436-463e-a961-a5c6c24d429c">
+  <con:testStep id="3b174aa6-d436-463e-a961-a5c6c24d429c" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/store/order/{orderId}" methodName="getOrderById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="1e869211-def2-41a9-8611-7bd15f61a11f" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="getOrderById" resourcePath="/v2/store/order/{orderId}" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="1e869211-def2-41a9-8611-7bd15f61a11f" mediaType="application/json" name="Request 1">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>
@@ -24,10 +24,10 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Request 1 2" id="195a922c-8fa8-4be7-b4c5-052c76610a9d">
+  <con:testStep id="195a922c-8fa8-4be7-b4c5-052c76610a9d" name="Request 1 2" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/store/order/{orderId}" methodName="deleteOrder" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1 2" id="a4208a78-c7c3-49d1-8fea-e46ffcb7254b" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="deleteOrder" resourcePath="/v2/store/order/{orderId}" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="a4208a78-c7c3-49d1-8fea-e46ffcb7254b" mediaType="application/json" name="Request 1 2">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>

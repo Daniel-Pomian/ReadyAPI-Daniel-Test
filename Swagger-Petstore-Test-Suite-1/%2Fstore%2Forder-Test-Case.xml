@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="fac3f588-3662-4008-9170-4875714cd2e9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/store/order Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="fac3f588-3662-4008-9170-4875714cd2e9" keepSession="false" name="/store/order Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>The test case generated for the REST resource [/store/order] located at [/store/order]</con:description>
   <con:settings>
     <con:setting id="fac3f588-3662-4008-9170-4875714cd2e9fileName">%2Fstore%2Forder-Test-Case</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="Request 1" id="859ba180-2c86-48a6-99a6-15b064560315">
+  <con:testStep id="859ba180-2c86-48a6-99a6-15b064560315" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/store/order" methodName="placeOrder" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="e30bc123-3e73-4d9f-86f7-0031cee9076e" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="placeOrder" resourcePath="/v2/store/order" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="e30bc123-3e73-4d9f-86f7-0031cee9076e" mediaType="application/json" name="Request 1">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/graph/routes/{pub_key}/{amt}" path="/v1/graph/routes/{pub_key}/{amt}" id="fae4d35d-5445-4bb4-b10f-6a28c5eccf4e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="fae4d35d-5445-4bb4-b10f-6a28c5eccf4e" name="/v1/graph/routes/{pub_key}/{amt}" path="/v1/graph/routes/{pub_key}/{amt}" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="fae4d35d-5445-4bb4-b10f-6a28c5eccf4efileName">%2Fv1%2Fgraph%2Froutes%2F%7Bpub_key%7D%2F%7Bamt%7D</con:setting>
   </con:settings>
@@ -7,15 +7,15 @@
     <con:parameter required="true">
       <con:name>pub_key</con:name>
       <con:style>TEMPLATE</con:style>
-      <con:description xsi:nil="true"/>
+      <con:description/>
     </con:parameter>
     <con:parameter required="true">
       <con:name>amt</con:name>
       <con:style>TEMPLATE</con:style>
-      <con:description xsi:nil="true"/>
+      <con:description/>
     </con:parameter>
   </con:parameters>
-  <con:method name="QueryRoutes" id="b8db7767-1c27-489c-87e8-503c669588a5" method="GET">
+  <con:method id="b8db7767-1c27-489c-87e8-503c669588a5" method="GET" name="QueryRoutes">
     <con:description>* lncli: `queryroutes`
 QueryRoutes attempts to query the daemon's Channel Router for a possible
 route to a target destination capable of carrying a specific amount of
@@ -50,7 +50,7 @@ present within the Sphinx packet encapsulated within the HTLC.</con:description>
   } ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="150460f8-a589-4cdb-bec2-4724d4328c8c" mediaType="application/json">
+    <con:request id="150460f8-a589-4cdb-bec2-4724d4328c8c" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

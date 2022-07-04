@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction name="/v2/user/createWithArray" method="POST" resourcePath="/v2/user/createWithArray" id="56e97fd5-ead6-42a8-880c-c30bd0ad6db3" xmlns:con="http://eviware.com/soapui/config">
+<con:restMockAction id="56e97fd5-ead6-42a8-880c-c30bd0ad6db3" method="POST" name="/v2/user/createWithArray" resourcePath="/v2/user/createWithArray" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="56e97fd5-ead6-42a8-880c-c30bd0ad6db3fileName">%2Fv2%2Fuser%2FcreateWithArray</con:setting>
   </con:settings>
@@ -7,11 +7,11 @@
   <con:dispatchConfig/>
   <con:dispatchXPath/>
   <con:routeScript/>
-  <con:response name="Response 1" id="4f7bf5a5-8016-41a5-ad62-4284498442bf" httpResponseStatus="200" mediaType="application/xml" dataSource="">
+  <con:response dataSource="" httpResponseStatus="200" id="4f7bf5a5-8016-41a5-ad62-4284498442bf" mediaType="application/xml" name="Response 1">
     <con:settings/>
     <con:responseContent/>
   </con:response>
-  <con:response name="Response 2" id="80b0815f-eb4d-4637-a143-70107bdeb1bd" httpResponseStatus="200" mediaType="application/json" dataSource="">
+  <con:response dataSource="" httpResponseStatus="200" id="80b0815f-eb4d-4637-a143-70107bdeb1bd" mediaType="application/json" name="Response 2">
     <con:settings/>
     <con:responseContent/>
   </con:response>

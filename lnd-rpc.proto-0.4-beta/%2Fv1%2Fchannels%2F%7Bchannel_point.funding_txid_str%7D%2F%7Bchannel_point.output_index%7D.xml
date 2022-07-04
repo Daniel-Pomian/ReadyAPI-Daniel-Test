@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" path="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" id="2abc9d3c-874c-4372-a31e-02f4548c3b38" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="2abc9d3c-874c-4372-a31e-02f4548c3b38" name="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" path="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="2abc9d3c-874c-4372-a31e-02f4548c3b38fileName">%2Fv1%2Fchannels%2F%7Bchannel_point.funding_txid_str%7D%2F%7Bchannel_point.output_index%7D</con:setting>
   </con:settings>
@@ -7,16 +7,16 @@
     <con:parameter required="true">
       <con:name>channel_point.funding_txid_str</con:name>
       <con:style>TEMPLATE</con:style>
-      <con:description xsi:nil="true"/>
+      <con:description/>
     </con:parameter>
     <con:parameter required="true">
       <con:name>channel_point.output_index</con:name>
       <con:style>TEMPLATE</con:style>
       <con:dataType>integer</con:dataType>
-      <con:description xsi:nil="true"/>
+      <con:description/>
     </con:parameter>
   </con:parameters>
-  <con:method name="CloseChannel" id="92cc8979-347b-4de6-93cc-8c3765767b36" method="DELETE">
+  <con:method id="92cc8979-347b-4de6-93cc-8c3765767b36" method="DELETE" name="CloseChannel">
     <con:description>* lncli: `closechannel`
 CloseChannel attempts to close an active channel identified by its channel
 outpoint (ChannelPoint). The actions of this method can additionally be
@@ -47,7 +47,7 @@ specified, then a default lax, block confirmation target is used.</con:descripti
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="b46361de-47e0-49b6-b752-a498914f81f0" mediaType="application/json">
+    <con:request id="b46361de-47e0-49b6-b752-a498914f81f0" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

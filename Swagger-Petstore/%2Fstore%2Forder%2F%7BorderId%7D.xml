@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/store/order/{orderId}" path="/store/order/{orderId}" id="4fd008f6-40d8-4b5e-8d04-ba4dba9289de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="4fd008f6-40d8-4b5e-8d04-ba4dba9289de" name="/store/order/{orderId}" path="/store/order/{orderId}" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="4fd008f6-40d8-4b5e-8d04-ba4dba9289defileName">%2Fstore%2Forder%2F%7BorderId%7D</con:setting>
   </con:settings>
@@ -11,7 +11,7 @@
       <con:description>ID of the order that needs to be deleted</con:description>
     </con:parameter>
   </con:parameters>
-  <con:method name="getOrderById" id="fdfdeaa1-6d00-4bce-a114-bb73bdea4d3e" method="GET">
+  <con:method id="fdfdeaa1-6d00-4bce-a114-bb73bdea4d3e" method="GET" name="getOrderById">
     <con:description>For valid response try integer IDs with value &lt;= 5 or > 10. Other values will generated exceptions
 Find purchase order by ID</con:description>
     <con:settings/>
@@ -62,7 +62,7 @@ Find purchase order by ID</con:description>
       <con:status>404</con:status>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="1e869211-def2-41a9-8611-7bd15f61a11f" mediaType="application/json">
+    <con:request id="1e869211-def2-41a9-8611-7bd15f61a11f" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:credentials>
@@ -82,7 +82,7 @@ Find purchase order by ID</con:description>
       </con:entry>
     </con:environmentSpec>
   </con:method>
-  <con:method name="deleteOrder" id="a5328663-9813-4566-90f8-8565a5f97b34" method="DELETE">
+  <con:method id="a5328663-9813-4566-90f8-8565a5f97b34" method="DELETE" name="deleteOrder">
     <con:description>For valid response try integer IDs with value &lt; 1000. Anything above 1000 or nonintegers will generate API errors
 Delete purchase order by ID</con:description>
     <con:settings/>
@@ -107,7 +107,7 @@ Delete purchase order by ID</con:description>
       <con:status>404</con:status>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="a4208a78-c7c3-49d1-8fea-e46ffcb7254b" mediaType="application/json">
+    <con:request id="a4208a78-c7c3-49d1-8fea-e46ffcb7254b" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:credentials>

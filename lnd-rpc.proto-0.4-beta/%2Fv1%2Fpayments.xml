@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/payments" path="/v1/payments" id="c95f593a-d0f4-41ab-a484-a97151003d70" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="c95f593a-d0f4-41ab-a484-a97151003d70" name="/v1/payments" path="/v1/payments" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c95f593a-d0f4-41ab-a484-a97151003d70fileName">%2Fv1%2Fpayments</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="ListPayments" id="0963025a-6c07-4896-ade3-bb6ff052357e" method="GET">
+  <con:method id="0963025a-6c07-4896-ade3-bb6ff052357e" method="GET" name="ListPayments">
     <con:description>* lncli: `listpayments`
 ListPayments returns a list of all outgoing payments.</con:description>
     <con:settings/>
@@ -24,7 +24,7 @@ ListPayments returns a list of all outgoing payments.</con:description>
   } ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="4cd5e149-f60b-4ee4-a5b1-05f46af3205d" mediaType="application/json">
+    <con:request id="4cd5e149-f60b-4ee4-a5b1-05f46af3205d" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>
@@ -34,7 +34,7 @@ ListPayments returns a list of all outgoing payments.</con:description>
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="DeleteAllPayments" id="c52c21ee-461c-4721-88a8-196bd6447874" method="DELETE">
+  <con:method id="c52c21ee-461c-4721-88a8-196bd6447874" method="DELETE" name="DeleteAllPayments">
     <con:description>*
 DeleteAllPayments deletes all outgoing payments from DB.</con:description>
     <con:settings/>
@@ -45,7 +45,7 @@ DeleteAllPayments deletes all outgoing payments from DB.</con:description>
       <con:params/>
       <con:sampleContent>{ }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="669fa3e7-02ef-43d8-aefa-0d18c24a6990" mediaType="application/json">
+    <con:request id="669fa3e7-02ef-43d8-aefa-0d18c24a6990" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

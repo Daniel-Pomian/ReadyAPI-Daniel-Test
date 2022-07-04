@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet/findByTags" path="/pet/findByTags" id="dee875c0-f34a-4543-a460-f22ba96b9e1b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="dee875c0-f34a-4543-a460-f22ba96b9e1b" name="/pet/findByTags" path="/pet/findByTags" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="dee875c0-f34a-4543-a460-f22ba96b9e1bfileName">%2Fpet%2FfindByTags</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="findPetsByTags" id="bc821560-8921-46c8-a9cd-58f5e0a4a8ef" method="GET">
+  <con:method id="bc821560-8921-46c8-a9cd-58f5e0a4a8ef" method="GET" name="findPetsByTags">
     <con:description>Muliple tags can be provided with comma seperated strings. Use tag1, tag2, tag3 for testing.
 Finds Pets by tags</con:description>
     <con:settings/>
@@ -68,7 +68,7 @@ Finds Pets by tags</con:description>
       <con:status>400</con:status>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="ac9503ee-bb7a-4037-8ec4-40b729b9d09f" mediaType="application/json">
+    <con:request id="ac9503ee-bb7a-4037-8ec4-40b729b9d09f" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:credentials>

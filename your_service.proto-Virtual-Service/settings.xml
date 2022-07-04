@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockService id="272e15a2-80f8-4e45-a306-322fccceaae4" port="8089" path="/" host="localhost" name="your_service.proto Virtual Service" xmlns:con="http://eviware.com/soapui/config">
+<con:restMockService host="localhost" id="272e15a2-80f8-4e45-a306-322fccceaae4" name="your_service.proto Virtual Service" path="/" port="8089" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="272e15a2-80f8-4e45-a306-322fccceaae4fileName">your_service.proto-Virtual-Service</con:setting>
   </con:settings>

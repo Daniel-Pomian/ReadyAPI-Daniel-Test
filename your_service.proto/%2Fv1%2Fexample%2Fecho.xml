@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/example/echo" path="/v1/example/echo" id="637dca76-c1fa-4c56-b91e-c700f72e61a1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="637dca76-c1fa-4c56-b91e-c700f72e61a1" name="/v1/example/echo" path="/v1/example/echo" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="637dca76-c1fa-4c56-b91e-c700f72e61a1fileName">%2Fv1%2Fexample%2Fecho</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="Echo" id="e2eafc13-4a78-40c6-9cd2-c69f39f6645d" method="POST">
+  <con:method id="e2eafc13-4a78-40c6-9cd2-c69f39f6645d" method="POST" name="Echo">
     <con:description/>
     <con:settings/>
     <con:parameters/>
@@ -23,7 +23,7 @@
   "value" : "hoge"
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="43f2f770-664d-4f8e-b943-2dd93d02538d" mediaType="application/json" postQueryString="false">
+    <con:request id="43f2f770-664d-4f8e-b943-2dd93d02538d" mediaType="application/json" name="Request 1" postQueryString="false">
       <con:settings/>
       <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
       <con:request>{\r

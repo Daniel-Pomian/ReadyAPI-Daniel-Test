@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockService id="bbfa0d7e-bf61-4ee3-afad-458bb7e879ac" port="8088" path="/" host="localhost" name="Swagger Petstore Virtual Service" xmlns:con="http://eviware.com/soapui/config">
+<con:restMockService host="localhost" id="bbfa0d7e-bf61-4ee3-afad-458bb7e879ac" name="Swagger Petstore Virtual Service" path="/" port="8088" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="bbfa0d7e-bf61-4ee3-afad-458bb7e879acfileName">Swagger-Petstore-Virtual-Service</con:setting>
   </con:settings>

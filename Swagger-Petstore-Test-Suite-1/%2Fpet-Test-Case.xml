@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="c7c3ef37-5d29-451d-b0a9-404e7b7fd8ba" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/pet Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="c7c3ef37-5d29-451d-b0a9-404e7b7fd8ba" keepSession="false" name="/pet Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>The test case generated for the REST resource [/pet] located at [/pet]</con:description>
   <con:settings>
     <con:setting id="c7c3ef37-5d29-451d-b0a9-404e7b7fd8bafileName">%2Fpet-Test-Case</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="Request 1" id="9868967b-f692-4c97-a8e5-472acf249af9">
+  <con:testStep id="9868967b-f692-4c97-a8e5-472acf249af9" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="a431fcda-8ae4-459e-bada-0cdfc9b1c621" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="addPet" resourcePath="/v2/pet" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="a431fcda-8ae4-459e-bada-0cdfc9b1c621" mediaType="application/json" name="Request 1">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request>{\r
@@ -37,10 +37,10 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Request 2" id="82c15ff0-0844-4ad8-8530-6762c52cd74d">
+  <con:testStep id="82c15ff0-0844-4ad8-8530-6762c52cd74d" name="Request 2" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 2" id="dad4aa3d-8139-4e74-8cc2-2f4ae8f8e4a2" mediaType="application/xml">
+    <con:config xsi:type="con:RestRequestStep" methodName="addPet" resourcePath="/v2/pet" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="dad4aa3d-8139-4e74-8cc2-2f4ae8f8e4a2" mediaType="application/xml" name="Request 2">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request><![CDATA[<Pet>\r
@@ -74,10 +74,10 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Request 1 2" id="dd9ef66d-d678-460d-817c-fa74615cc912">
+  <con:testStep id="dd9ef66d-d678-460d-817c-fa74615cc912" name="Request 1 2" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="updatePet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1 2" id="bebfb57c-12f4-478b-83df-36ad8fd3fa60" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="updatePet" resourcePath="/v2/pet" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="bebfb57c-12f4-478b-83df-36ad8fd3fa60" mediaType="application/json" name="Request 1 2">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request>{\r
@@ -107,10 +107,10 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Request 2 2" id="f7f64c1d-432b-4aba-91db-941e12448d52">
+  <con:testStep id="f7f64c1d-432b-4aba-91db-941e12448d52" name="Request 2 2" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="updatePet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 2 2" id="85950d04-0a75-408e-b914-a7998bf68233" mediaType="application/xml">
+    <con:config xsi:type="con:RestRequestStep" methodName="updatePet" resourcePath="/v2/pet" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="85950d04-0a75-408e-b914-a7998bf68233" mediaType="application/xml" name="Request 2 2">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request><![CDATA[<Pet>\r
@@ -144,7 +144,7 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="groovy" name="Groovy Script" id="268f7be3-a3c5-43e6-ad08-8be681c96320">
+  <con:testStep id="268f7be3-a3c5-43e6-ad08-8be681c96320" name="Groovy Script" type="groovy">
     <con:settings/>
     <con:config>
       <script>one line

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/user" path="/user" id="648a0293-f817-46bd-be68-d1b74479236f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="648a0293-f817-46bd-be68-d1b74479236f" name="/user" path="/user" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="648a0293-f817-46bd-be68-d1b74479236ffileName">%2Fuser</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="createUser" id="b9eacea3-d7c3-41a1-ba03-1ae2ecf0408e" method="POST">
+  <con:method id="b9eacea3-d7c3-41a1-ba03-1ae2ecf0408e" method="POST" name="createUser">
     <con:description>This can only be done by the logged in user.
 Create user</con:description>
     <con:settings/>
@@ -19,7 +19,7 @@ Create user</con:description>
       <con:status/>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="f1531256-4f17-4016-8a73-81b5b42c71b5" mediaType="application/json">
+    <con:request id="f1531256-4f17-4016-8a73-81b5b42c71b5" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:credentials>

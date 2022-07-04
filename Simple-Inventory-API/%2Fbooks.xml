@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/books" path="/books" id="7b6e08bf-039a-4481-8289-de8759978be9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="7b6e08bf-039a-4481-8289-de8759978be9" name="/books" path="/books" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7b6e08bf-039a-4481-8289-de8759978be9fileName">%2Fbooks</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="books" id="da777e9a-2bfc-4f7f-acba-4c29febd1408" method="GET">
+  <con:method id="da777e9a-2bfc-4f7f-acba-4c29febd1408" method="GET" name="books">
     <con:description>Returns Goodreads books available at PCPL
 Returns Goodreads books available at PCPL</con:description>
     <con:settings/>
@@ -40,7 +40,7 @@ Returns Goodreads books available at PCPL</con:description>
       <con:status>400</con:status>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="35e627f6-3995-4556-b1fb-1ccc6beae879" mediaType="application/json">
+    <con:request id="35e627f6-3995-4556-b1fb-1ccc6beae879" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
       <con:credentials>

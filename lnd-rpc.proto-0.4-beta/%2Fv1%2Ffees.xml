@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/fees" path="/v1/fees" id="1a57a0d4-af9a-4136-9d04-fce3aff2baa7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="1a57a0d4-af9a-4136-9d04-fce3aff2baa7" name="/v1/fees" path="/v1/fees" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="1a57a0d4-af9a-4136-9d04-fce3aff2baa7fileName">%2Fv1%2Ffees</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="FeeReport" id="68d48b9e-b2dc-4d38-916b-253226b12cd7" method="GET">
+  <con:method id="68d48b9e-b2dc-4d38-916b-253226b12cd7" method="GET" name="FeeReport">
     <con:description>* lncli: `feereport`
 FeeReport allows the caller to obtain a report detailing the current fee
 schedule enforced by the node globally for each channel.</con:description>
@@ -26,7 +26,7 @@ schedule enforced by the node globally for each channel.</con:description>
   "month_fee_sum" : "string"
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="8004d380-c6a3-47d7-8539-8201ebcddc3e" mediaType="application/json">
+    <con:request id="8004d380-c6a3-47d7-8539-8201ebcddc3e" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

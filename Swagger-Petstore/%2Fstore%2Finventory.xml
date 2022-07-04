@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/store/inventory" path="/store/inventory" id="2b577e78-87cb-4304-90ce-f651d1d50c63" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="2b577e78-87cb-4304-90ce-f651d1d50c63" name="/store/inventory" path="/store/inventory" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="2b577e78-87cb-4304-90ce-f651d1d50c63fileName">%2Fstore%2Finventory</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="getInventory" id="9d1dd0ad-4126-42cf-918a-6183058e47df" method="GET">
+  <con:method id="9d1dd0ad-4126-42cf-918a-6183058e47df" method="GET" name="getInventory">
     <con:description>Returns a map of status codes to quantities
 Returns pet inventories by status</con:description>
     <con:settings/>
@@ -19,7 +19,7 @@ Returns pet inventories by status</con:description>
   "additionalProp3" : 0
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="837a5f56-dc03-47b0-8052-edb2c2c1ca01" mediaType="application/json">
+    <con:request id="837a5f56-dc03-47b0-8052-edb2c2c1ca01" mediaType="application/json" name="Request 1">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>

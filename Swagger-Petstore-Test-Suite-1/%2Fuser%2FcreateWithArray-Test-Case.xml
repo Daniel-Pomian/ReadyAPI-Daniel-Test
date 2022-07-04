@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="627c4b50-0e0e-4b33-8960-0af51234478f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/user/createWithArray Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="627c4b50-0e0e-4b33-8960-0af51234478f" keepSession="false" name="/user/createWithArray Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>The test case generated for the REST resource [/user/createWithArray] located at [/user/createWithArray]</con:description>
   <con:settings>
     <con:setting id="627c4b50-0e0e-4b33-8960-0af51234478ffileName">%2Fuser%2FcreateWithArray-Test-Case</con:setting>
   </con:settings>
-  <con:testStep type="datasource" name="Data Source" id="b4ff1bd8-edc4-4c54-bd69-319358c5191f">
+  <con:testStep id="b4ff1bd8-edc4-4c54-bd69-319358c5191f" name="Data Source" type="datasource">
     <con:settings>
       <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
     </con:settings>
@@ -25,10 +25,10 @@
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Request 1" id="f33bf697-32a2-42a0-9cde-431ee91263bb">
+  <con:testStep id="f33bf697-32a2-42a0-9cde-431ee91263bb" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/user/createWithArray" methodName="createUsersWithArrayInput" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="e7ae0a5d-d718-4541-9a87-ed964d5ca2b8" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="createUsersWithArrayInput" resourcePath="/v2/user/createWithArray" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="e7ae0a5d-d718-4541-9a87-ed964d5ca2b8" mediaType="application/json" name="Request 1">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>
@@ -46,7 +46,7 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="calltestcase" name="Run Test Case" id="32a318bf-b6ca-42ba-b8f3-64ad3e2cdc84">
+  <con:testStep id="32a318bf-b6ca-42ba-b8f3-64ad3e2cdc84" name="Run Test Case" type="calltestcase">
     <con:settings/>
     <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:targetTestCase>c7c3ef37-5d29-451d-b0a9-404e7b7fd8ba</con:targetTestCase>
@@ -55,7 +55,7 @@
       <con:runMode>PARALLELL</con:runMode>
     </con:config>
   </con:testStep>
-  <con:testStep type="properties" name="Properties" id="bf5c14e5-e3e6-401a-a27a-382bcd5ae281">
+  <con:testStep id="bf5c14e5-e3e6-401a-a27a-382bcd5ae281" name="Properties" type="properties">
     <con:settings/>
     <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:properties/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/graph" path="/v1/graph" id="eaeacea7-7e4d-45fe-9841-909c00428413" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="eaeacea7-7e4d-45fe-9841-909c00428413" name="/v1/graph" path="/v1/graph" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="eaeacea7-7e4d-45fe-9841-909c00428413fileName">%2Fv1%2Fgraph</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="DescribeGraph" id="13cb5918-5ce1-4cb9-ac19-7bc90aa296a1" method="GET">
+  <con:method id="13cb5918-5ce1-4cb9-ac19-7bc90aa296a1" method="GET" name="DescribeGraph">
     <con:description>* lncli: `describegraph`
 DescribeGraph returns a description of the latest graph state from the
 point of view of the node. The graph information is partitioned into two
@@ -51,7 +51,7 @@ delta, fee information, etc.</con:description>
   } ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="36ac3307-0b8a-4108-813e-8d0eee2b9867" mediaType="application/json">
+    <con:request id="36ac3307-0b8a-4108-813e-8d0eee2b9867" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

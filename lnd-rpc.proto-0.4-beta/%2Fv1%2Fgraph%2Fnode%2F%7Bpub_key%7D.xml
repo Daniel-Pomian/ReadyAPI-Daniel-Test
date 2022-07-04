@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/graph/node/{pub_key}" path="/v1/graph/node/{pub_key}" id="7fd0c086-664c-44b1-a3ba-f0a547180c53" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="7fd0c086-664c-44b1-a3ba-f0a547180c53" name="/v1/graph/node/{pub_key}" path="/v1/graph/node/{pub_key}" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7fd0c086-664c-44b1-a3ba-f0a547180c53fileName">%2Fv1%2Fgraph%2Fnode%2F%7Bpub_key%7D</con:setting>
   </con:settings>
@@ -7,10 +7,10 @@
     <con:parameter required="true">
       <con:name>pub_key</con:name>
       <con:style>TEMPLATE</con:style>
-      <con:description xsi:nil="true"/>
+      <con:description/>
     </con:parameter>
   </con:parameters>
-  <con:method name="GetNodeInfo" id="16212a1b-1f2a-491c-b910-17caf01afd6d" method="GET">
+  <con:method id="16212a1b-1f2a-491c-b910-17caf01afd6d" method="GET" name="GetNodeInfo">
     <con:description>* lncli: `getnodeinfo`
 GetNodeInfo returns the latest advertised, aggregated, and authenticated
 channel information for the specified node identified by its public key.</con:description>
@@ -35,7 +35,7 @@ channel information for the specified node identified by its public key.</con:de
   "total_capacity" : "string"
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="9ff63c16-a40f-4997-850b-6b75d3079866" mediaType="application/json">
+    <con:request id="9ff63c16-a40f-4997-850b-6b75d3079866" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

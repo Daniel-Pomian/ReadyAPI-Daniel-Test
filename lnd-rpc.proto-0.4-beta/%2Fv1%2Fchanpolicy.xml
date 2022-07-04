@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/chanpolicy" path="/v1/chanpolicy" id="d4ac5cd7-5008-47a3-8478-558ced77f18d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="d4ac5cd7-5008-47a3-8478-558ced77f18d" name="/v1/chanpolicy" path="/v1/chanpolicy" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d4ac5cd7-5008-47a3-8478-558ced77f18dfileName">%2Fv1%2Fchanpolicy</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="UpdateChannelPolicy" id="cccf9149-bfc1-42b6-bb80-d686a4313bcb" method="POST">
+  <con:method id="cccf9149-bfc1-42b6-bb80-d686a4313bcb" method="POST" name="UpdateChannelPolicy">
     <con:description>* lncli: `updatechanpolicy`
 UpdateChannelPolicy allows the caller to update the fee schedule and
 channel policies for all channels globally, or a particular channel.</con:description>
@@ -31,7 +31,7 @@ channel policies for all channels globally, or a particular channel.</con:descri
       <con:params/>
       <con:sampleContent>{ }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="f64fa713-cc78-4810-a05e-56c0d3e84ef6" mediaType="application/json">
+    <con:request id="f64fa713-cc78-4810-a05e-56c0d3e84ef6" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:request>{\r

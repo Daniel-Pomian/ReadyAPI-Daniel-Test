@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet" path="/pet" id="54243f9c-0ed8-4bca-85e1-b50f1916cb91" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="54243f9c-0ed8-4bca-85e1-b50f1916cb91" name="/pet" path="/pet" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="54243f9c-0ed8-4bca-85e1-b50f1916cb91fileName">%2Fpet</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="addPet" id="a3bb8ba4-ded7-44c2-a004-79935fab504c" method="POST">
+  <con:method id="a3bb8ba4-ded7-44c2-a004-79935fab504c" method="POST" name="addPet">
     <con:description>Add a new pet to the store</con:description>
     <con:settings/>
     <con:parameters/>
@@ -66,7 +66,7 @@
       <con:mediaType>application/xml</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="a431fcda-8ae4-459e-bada-0cdfc9b1c621" mediaType="application/json">
+    <con:request id="a431fcda-8ae4-459e-bada-0cdfc9b1c621" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request>{\r
@@ -94,7 +94,7 @@
         </con:entry>
       </con:environmentSpec>
     </con:request>
-    <con:request name="Request 2" id="dad4aa3d-8139-4e74-8cc2-2f4ae8f8e4a2" mediaType="application/xml">
+    <con:request id="dad4aa3d-8139-4e74-8cc2-2f4ae8f8e4a2" mediaType="application/xml" name="Request 2">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request><![CDATA[<Pet>\r
@@ -132,7 +132,7 @@
       </con:entry>
     </con:environmentSpec>
   </con:method>
-  <con:method name="updatePet" id="62c3551d-d97a-48e2-8e75-28af9e405387" method="PUT">
+  <con:method id="62c3551d-d97a-48e2-8e75-28af9e405387" method="PUT" name="updatePet">
     <con:description>Update an existing pet</con:description>
     <con:settings/>
     <con:parameters/>
@@ -214,7 +214,7 @@
       <con:mediaType>application/xml</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="bebfb57c-12f4-478b-83df-36ad8fd3fa60" mediaType="application/json">
+    <con:request id="bebfb57c-12f4-478b-83df-36ad8fd3fa60" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request>{\r
@@ -242,7 +242,7 @@
         </con:entry>
       </con:environmentSpec>
     </con:request>
-    <con:request name="Request 2" id="85950d04-0a75-408e-b914-a7998bf68233" mediaType="application/xml">
+    <con:request id="85950d04-0a75-408e-b914-a7998bf68233" mediaType="application/xml" name="Request 2">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request><![CDATA[<Pet>\r

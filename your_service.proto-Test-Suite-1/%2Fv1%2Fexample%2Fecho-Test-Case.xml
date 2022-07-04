@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="5a864504-478d-4e53-9e0b-2da93bf42b9a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/v1/example/echo Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="5a864504-478d-4e53-9e0b-2da93bf42b9a" keepSession="false" name="/v1/example/echo Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>The test case generated for the REST resource [/v1/example/echo] located at [/v1/example/echo]</con:description>
   <con:settings>
     <con:setting id="5a864504-478d-4e53-9e0b-2da93bf42b9afileName">%2Fv1%2Fexample%2Fecho-Test-Case</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="Request 1" id="22e5d651-9814-40e3-afa8-725fe2f19115">
+  <con:testStep id="22e5d651-9814-40e3-afa8-725fe2f19115" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="your_service.proto" resourcePath="/raigorai/grpc-test/1.0.0/v1/example/echo" methodName="Echo" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="43f2f770-664d-4f8e-b943-2dd93d02538d" mediaType="application/json" postQueryString="false">
+    <con:config xsi:type="con:RestRequestStep" methodName="Echo" resourcePath="/raigorai/grpc-test/1.0.0/v1/example/echo" service="your_service.proto" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="43f2f770-664d-4f8e-b943-2dd93d02538d" mediaType="application/json" name="Request 1" postQueryString="false">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
         <con:request>{\r

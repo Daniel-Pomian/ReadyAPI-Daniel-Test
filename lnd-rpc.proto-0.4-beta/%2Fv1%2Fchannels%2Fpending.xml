@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/channels/pending" path="/v1/channels/pending" id="268174d4-cda5-4def-b838-2a7c732ee946" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="268174d4-cda5-4def-b838-2a7c732ee946" name="/v1/channels/pending" path="/v1/channels/pending" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="268174d4-cda5-4def-b838-2a7c732ee946fileName">%2Fv1%2Fchannels%2Fpending</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="PendingChannels" id="d5fd7d02-31d4-46f4-b1a3-caeffb6ab436" method="GET">
+  <con:method id="d5fd7d02-31d4-46f4-b1a3-caeffb6ab436" method="GET" name="PendingChannels">
     <con:description>* lncli: `pendingchannels`
 PendingChannels returns a list of all the channels that are currently
 considered "pending". A channel is pending if it has finished the funding
@@ -65,7 +65,7 @@ process of closure, either initiated cooperatively or non-cooperatively.</con:de
   } ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="19274bfd-ffdd-43d6-9f94-bec2bb44d1e1" mediaType="application/json">
+    <con:request id="19274bfd-ffdd-43d6-9f94-bec2bb44d1e1" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

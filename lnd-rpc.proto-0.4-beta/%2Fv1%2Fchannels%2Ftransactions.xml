@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/channels/transactions" path="/v1/channels/transactions" id="b4042505-04a3-47db-9c7d-98bcc45b6385" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="b4042505-04a3-47db-9c7d-98bcc45b6385" name="/v1/channels/transactions" path="/v1/channels/transactions" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="b4042505-04a3-47db-9c7d-98bcc45b6385fileName">%2Fv1%2Fchannels%2Ftransactions</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="SendPaymentSync" id="3760a168-c528-490c-9341-6e2653dda3a0" method="POST">
+  <con:method id="3760a168-c528-490c-9341-6e2653dda3a0" method="POST" name="SendPaymentSync">
     <con:description>*
 SendPaymentSync is the synchronous non-streaming version of SendPayment.
 This RPC is intended to be consumed by clients of the REST proxy.
@@ -46,7 +46,7 @@ hash (if any) to be encoded as hex strings.</con:description>
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="aafeaf0f-3d6e-46dc-b0e3-8aae35c611a0" mediaType="application/json">
+    <con:request id="aafeaf0f-3d6e-46dc-b0e3-8aae35c611a0" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:request>{\r

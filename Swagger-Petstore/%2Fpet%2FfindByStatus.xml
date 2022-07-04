@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="12f87836-ea3a-4b2b-bd9e-9eb1eebcecc9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="12f87836-ea3a-4b2b-bd9e-9eb1eebcecc9" name="/pet/findByStatus" path="/pet/findByStatus" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="12f87836-ea3a-4b2b-bd9e-9eb1eebcecc9fileName">%2Fpet%2FfindByStatus</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="findPetsByStatus" id="edab4525-c373-4127-8d0f-dacc50b60292" method="GET">
+  <con:method id="edab4525-c373-4127-8d0f-dacc50b60292" method="GET" name="findPetsByStatus">
     <con:description>Multiple status values can be provided with comma seperated strings
 Finds Pets by status</con:description>
     <con:settings/>
@@ -68,7 +68,7 @@ Finds Pets by status</con:description>
       <con:status>400</con:status>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="78f86516-8015-486c-b0fd-69194fe5f50b" mediaType="application/json">
+    <con:request id="78f86516-8015-486c-b0fd-69194fe5f50b" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request/>

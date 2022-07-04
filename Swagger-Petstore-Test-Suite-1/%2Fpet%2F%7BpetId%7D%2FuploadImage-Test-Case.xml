@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="c4e74add-030a-4f53-854f-9e6c856c1c47" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/pet/{petId}/uploadImage Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="c4e74add-030a-4f53-854f-9e6c856c1c47" keepSession="false" name="/pet/{petId}/uploadImage Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>The test case generated for the REST resource [/pet/{petId}/uploadImage] located at [/pet/{petId}/uploadImage]</con:description>
   <con:settings>
     <con:setting id="c4e74add-030a-4f53-854f-9e6c856c1c47fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage-Test-Case</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="Request 1" id="9165cd3b-d977-4336-98ed-8caa83c77601">
+  <con:testStep id="9165cd3b-d977-4336-98ed-8caa83c77601" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="6bfb05e0-0638-4036-b2c7-6ab7fdd14946" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="uploadFile" resourcePath="/v2/pet/{petId}/uploadImage" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="6bfb05e0-0638-4036-b2c7-6ab7fdd14946" mediaType="application/json" name="Request 1">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>

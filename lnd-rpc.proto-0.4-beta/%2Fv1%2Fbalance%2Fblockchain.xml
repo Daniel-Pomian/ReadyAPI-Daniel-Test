@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/v1/balance/blockchain" path="/v1/balance/blockchain" id="faed1afc-4d43-4842-a899-5b61881f02a4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="faed1afc-4d43-4842-a899-5b61881f02a4" name="/v1/balance/blockchain" path="/v1/balance/blockchain" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="faed1afc-4d43-4842-a899-5b61881f02a4fileName">%2Fv1%2Fbalance%2Fblockchain</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="WalletBalance" id="29b6c859-4386-40a4-84a0-9eb31cc649fa" method="GET">
+  <con:method id="29b6c859-4386-40a4-84a0-9eb31cc649fa" method="GET" name="WalletBalance">
     <con:description>* lncli: `walletbalance`
 WalletBalance returns total unspent outputs(confirmed and unconfirmed), all
 confirmed unspent outputs and all unconfirmed unspent outputs under control
@@ -21,7 +21,7 @@ of the wallet.</con:description>
   "unconfirmed_balance" : "string"
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="59bc2845-c178-4391-af21-179bd88634b1" mediaType="application/json">
+    <con:request id="59bc2845-c178-4391-af21-179bd88634b1" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.swaggerhub.com</con:endpoint>
       <con:credentials>

@@ -7,14 +7,31 @@
   <con:testStep id="9165cd3b-d977-4336-98ed-8caa83c77601" name="Request 1" type="restrequest">
     <con:settings/>
     <con:config xsi:type="con:RestRequestStep" methodName="uploadFile" resourcePath="/v2/pet/{petId}/uploadImage" service="Swagger Petstore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest id="6bfb05e0-0638-4036-b2c7-6ab7fdd14946" mediaType="application/json" name="Request 1">
+      <con:restRequest id="6bfb05e0-0638-4036-b2c7-6ab7fdd14946" mediaType="application/json" name="Request 1" postQueryString="false">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>
+        <con:assertion type="DataAndMetadataAssertion" id="a2374081-f71d-4322-8162-fb8646c394fb" name="Smart Assertion">
+          <con:configuration xsi:type="con:DataAndMetadataAssertion">
+            <con:mode>Received Metadata</con:mode>
+            <con:elements>
+              <con:path>$['Headers']['new header1']</con:path>
+              <con:element>new header1</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${Request 1#Username}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:originalMessage>{"Headers":{"new header1":"Enter value here"}}</con:originalMessage>
+          </con:configuration>
+        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">

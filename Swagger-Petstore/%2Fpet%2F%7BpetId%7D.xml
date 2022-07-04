@@ -11,7 +11,7 @@
       <con:description>Pet id to delete</con:description>
     </con:parameter>
   </con:parameters>
-  <con:method id="a877bdc7-7890-43ae-9fc1-3d8541a8240a" method="GET" name="getPetById">
+  <con:method id="a877bdc7-7890-43ae-9fc1-3d8541a8240a" method="PUT" name="getPetById">
     <con:description>Returns a single pet
 Find pet by ID</con:description>
     <con:settings/>
@@ -78,13 +78,18 @@ Find pet by ID</con:description>
       <con:status>404</con:status>
       <con:params/>
     </con:representation>
-    <con:request id="24b705f0-da29-47fb-89d0-dd9cd59a4ccf" mediaType="application/json" name="Request 1">
-      <con:settings/>
+    <con:request id="24b705f0-da29-47fb-89d0-dd9cd59a4ccf" mediaType="application/json" name="Request 1" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:request/>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-        <con:authType>No Authorization</con:authType>
+        <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+        <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+        <con:authType>Global HTTP Settings</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">
@@ -127,13 +132,20 @@ Find pet by ID</con:description>
       <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request id="78547956-b9fc-463d-bf9f-f2e8cb0e7715" mediaType="application/json" name="Request 1">
-      <con:settings/>
+    <con:request id="78547956-b9fc-463d-bf9f-f2e8cb0e7715" mediaType="application/json" name="Request 1" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:request>{
+	"something":""
+}</con:request>
+      <con:originalUri>https://petstore.swagger.io/v2/pet/</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">

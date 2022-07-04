@@ -65,10 +65,12 @@ Find purchase order by ID</con:description>
     <con:request id="1e869211-def2-41a9-8611-7bd15f61a11f" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">

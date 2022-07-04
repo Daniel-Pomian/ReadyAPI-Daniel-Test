@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/genseed" path="/v1/genseed" id="4197c2f5-b7d2-4c4f-b7bc-9e7ff73202fc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4197c2f5-b7d2-4c4f-b7bc-9e7ff73202fcfileName">%2Fv1%2Fgenseed</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GenSeed" id="266d2612-31a6-41f5-8c03-a979581ddd8e" method="GET">
+    <con:description>Once the cipherseed is obtained and verified by the user, the InitWallet
+method should be used to commit the newly generated seed, and create the
+wallet.
+*
+GenSeed is the first method that should be used to instantiate a new lnd
+instance. This method allows a caller to generate a new aezeed cipher seed
+given an optional passphrase. If provided, the passphrase will be necessary
+to decrypt the cipherseed to expose the internal wallet seed.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>aezeed_passphrase</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>*
+aezeed_passphrase is an optional user provided passphrase that will be used
+to encrypt the generated aezeed cipher seed.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>seed_entropy</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>*
+seed_entropy is an optional 16-bytes generated via CSPRNG. If not
+specified, then a fresh set of randomness will be used to create the seed.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "cipher_seed_mnemonic" : [ "string" ],
+  "enciphered_seed" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6c74908d-e961-47b6-afde-01cbc3eced6f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

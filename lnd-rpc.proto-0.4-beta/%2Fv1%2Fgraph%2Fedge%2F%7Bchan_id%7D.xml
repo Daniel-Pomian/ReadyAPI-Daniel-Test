@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/graph/edge/{chan_id}" path="/v1/graph/edge/{chan_id}" id="e3efd072-c68d-4d10-a540-6c96d299b66d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e3efd072-c68d-4d10-a540-6c96d299b66dfileName">%2Fv1%2Fgraph%2Fedge%2F%7Bchan_id%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>chan_id</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetChanInfo" id="8f7d0a76-8ad7-47e9-b2e9-95442b88e6cb" method="GET">
+    <con:description>* lncli: `getchaninfo`
+GetChanInfo returns the latest authenticated network announcement for the
+given channel identified by its channel ID: an 8-byte integer which
+uniquely identifies the location of transaction's funding output within the
+blockchain.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "channel_id" : "string",
+  "chan_point" : "string",
+  "last_update" : 0,
+  "node1_pub" : "string",
+  "node2_pub" : "string",
+  "capacity" : "string",
+  "node1_policy" : {
+    "time_lock_delta" : 0,
+    "min_htlc" : "string",
+    "fee_base_msat" : "string",
+    "fee_rate_milli_msat" : "string"
+  },
+  "node2_policy" : {
+    "time_lock_delta" : 0,
+    "min_htlc" : "string",
+    "fee_base_msat" : "string",
+    "fee_rate_milli_msat" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="f9c5523d-7076-487d-bc5e-3521b1d866ec" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

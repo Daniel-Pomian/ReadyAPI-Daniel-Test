@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/switch" path="/v1/switch" id="deba8d3a-3334-4f8f-aec3-a0dcf87d7887" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="deba8d3a-3334-4f8f-aec3-a0dcf87d7887fileName">%2Fv1%2Fswitch</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ForwardingHistory" id="59b9c14b-4dab-46a7-a95c-f3d998cef47b" method="POST">
+    <con:description>A list of forwarding events are returned. The size of each forwarding event
+is 40 bytes, and the max message size able to be returned in gRPC is 4 MiB.
+As a result each message can only contain 50k entries.  Each response has
+the index offset of the last entry. The index offset can be provided to the
+request to allow the caller to skip a series of records.
+* lncli: `fwdinghistory`
+ForwardingHistory allows the caller to query the htlcswitch for a record of
+all HTLC's forwarded within the target time range, and integer offset
+within that time range. If no time-range is specified, then the first chunk
+of the past 24 hrs of forwarding history are returned.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "start_time" : "string",
+  "end_time" : "string",
+  "index_offset" : 0,
+  "num_max_events" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "forwarding_events" : [ {
+    "timestamp" : "string",
+    "chan_id_in" : "string",
+    "chan_id_out" : "string",
+    "amt_in" : "string",
+    "amt_out" : "string",
+    "fee" : "string"
+  } ],
+  "last_offset_index" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="38fd82b8-b9e9-44af-94da-36bc52716c11" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:request>{\r
+  "start_time" : "string",\r
+  "end_time" : "string",\r
+  "index_offset" : 0,\r
+  "num_max_events" : 0\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

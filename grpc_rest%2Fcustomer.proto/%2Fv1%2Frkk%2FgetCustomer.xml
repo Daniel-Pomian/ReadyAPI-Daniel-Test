@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/rkk/getCustomer" path="/v1/rkk/getCustomer" id="3edb9012-8933-4fc2-bf82-ef1d729fa599" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3edb9012-8933-4fc2-bf82-ef1d729fa599fileName">%2Fv1%2Frkk%2FgetCustomer</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCustomer" id="3cd0efef-e435-491d-bf7a-becb346f0c2c" method="POST">
+    <con:description>Get customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "customerId" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : true,
+  "customers" : [ {
+    "requestedCustomerId" : "string",
+    "isFound" : true,
+    "customer" : {
+      "lastname" : "string",
+      "firstname" : "string",
+      "middlename" : "string",
+      "sex" : "string",
+      "dateOfBirthday" : "string",
+      "contact" : {
+        "type" : 0,
+        "phone" : "string"
+      },
+      "id" : {
+        "idNumber" : "string",
+        "idSeria" : "string",
+        "dateIssue" : "string"
+      },
+      "customerId" : "string"
+    }
+  } ],
+  "error" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="17434e55-da55-41d5-a507-1c1bee495b83" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>http://62.76.45.221:9090</con:endpoint>
+      <con:request>{\r
+  "customerId" : [ "string" ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

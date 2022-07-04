@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="e7811692-5612-4817-b805-85f6576856c0" name="your_service.proto" type="rest_ex" wadlVersion="https://swagger.io/swagger2/specification" definitionUrl="https://api.swaggerhub.com/apis/raigorai/grpc-test/1.0.0" basePath="/raigorai/grpc-test/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description xsi:nil="true"/>
+  <con:settings>
+    <con:setting id="e7811692-5612-4817-b805-85f6576856c0fileName">your_service.proto</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="https://api.swaggerhub.com/apis/raigorai/grpc-test/1.0.0">
+    <con:part>
+      <con:url>https://api.swaggerhub.com/apis/raigorai/grpc-test/1.0.0</con:url>
+      <con:content>{"swagger":"2.0","info":{"title":"your_service.proto","version":"1.0.0"},"consumes":["application/json"],"produces":["application/json"],"paths":{"/v1/example/echo":{"post":{"operationId":"Echo","responses":{"200":{"description":"","schema":{"$ref":"#/definitions/exampleStringMessage"}}},"parameters":[{"name":"body","in":"body","required":true,"schema":{"$ref":"#/definitions/exampleStringMessage"}}],"tags":["YourService"]}}},"definitions":{"exampleStringMessage":{"type":"object","properties":{"value":{"type":"string","example":"hoge"}}}},"host":"virtserver.swaggerhub.com","basePath":"/raigorai/grpc-test/1.0.0","schemes":["https","http"]}</con:content>
+      <con:type>https://swagger.io/swagger2/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>http://localhost:8089/</con:endpoint>
+    <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+    <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

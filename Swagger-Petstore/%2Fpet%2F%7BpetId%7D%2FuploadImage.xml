@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" id="fb0bab01-ff78-49c5-88e3-cb2f4605b4e1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fb0bab01-ff78-49c5-88e3-cb2f4605b4e1fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>petId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description>ID of pet to update</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="uploadFile" id="b4f04b23-d6e5-4b78-8635-cac500cc5bb2" method="POST">
+    <con:description>uploads an image</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>additionalMetadata</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Additional data to pass to server</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>file</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>file to upload</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : 0,
+  "type" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>multipart/form-data</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6bfb05e0-0638-4036-b2c7-6ab7fdd14946" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

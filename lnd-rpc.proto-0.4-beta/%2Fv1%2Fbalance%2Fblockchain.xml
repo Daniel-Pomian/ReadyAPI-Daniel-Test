@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/balance/blockchain" path="/v1/balance/blockchain" id="faed1afc-4d43-4842-a899-5b61881f02a4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="faed1afc-4d43-4842-a899-5b61881f02a4fileName">%2Fv1%2Fbalance%2Fblockchain</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="WalletBalance" id="29b6c859-4386-40a4-84a0-9eb31cc649fa" method="GET">
+    <con:description>* lncli: `walletbalance`
+WalletBalance returns total unspent outputs(confirmed and unconfirmed), all
+confirmed unspent outputs and all unconfirmed unspent outputs under control
+of the wallet.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "total_balance" : "string",
+  "confirmed_balance" : "string",
+  "unconfirmed_balance" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="59bc2845-c178-4391-af21-179bd88634b1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

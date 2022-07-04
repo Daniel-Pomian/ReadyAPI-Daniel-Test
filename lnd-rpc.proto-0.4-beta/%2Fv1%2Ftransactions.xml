@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/transactions" path="/v1/transactions" id="d903f831-432d-4322-8bb4-882488be1ae0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d903f831-432d-4322-8bb4-882488be1ae0fileName">%2Fv1%2Ftransactions</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetTransactions" id="3f8c525a-d34c-4fd9-ac63-3fb5e53982a9" method="GET">
+    <con:description>* lncli: `listchaintxns`
+GetTransactions returns a list describing all the known transactions
+relevant to the wallet.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "transactions" : [ {
+    "tx_hash" : "string",
+    "amount" : "string",
+    "num_confirmations" : 0,
+    "block_hash" : "string",
+    "block_height" : 0,
+    "time_stamp" : "string",
+    "total_fees" : "string",
+    "dest_addresses" : [ "string" ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="a98fc8df-1278-4b0f-84ec-6baad8c99316" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="SendCoins" id="8d3ea96c-14c1-4aeb-b2d0-44fb176c3606" method="POST">
+    <con:description>* lncli: `sendcoins`
+SendCoins executes a request to send coins to a particular address. Unlike
+SendMany, this RPC call only allows creating a single output at a time. If
+neither target_conf, or sat_per_byte are set, then the internal wallet will
+consult its fee model to determine a fee for the default confirmation
+target.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "addr" : "string",
+  "amount" : "string",
+  "target_conf" : 0,
+  "sat_per_byte" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "txid" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="7c4e18df-9f1a-4e8a-9d1c-f6adb7c9225d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:request>{\r
+  "addr" : "string",\r
+  "amount" : "string",\r
+  "target_conf" : 0,\r
+  "sat_per_byte" : "string"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

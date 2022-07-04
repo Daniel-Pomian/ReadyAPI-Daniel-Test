@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/peers/{pub_key}" path="/v1/peers/{pub_key}" id="78da1b60-db3c-44df-b9c8-68ef649fd217" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="78da1b60-db3c-44df-b9c8-68ef649fd217fileName">%2Fv1%2Fpeers%2F%7Bpub_key%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>pub_key</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="DisconnectPeer" id="cd0d7ea4-f2d0-4c19-a7fc-b8c74edb345f" method="DELETE">
+    <con:description>* lncli: `disconnect`
+DisconnectPeer attempts to disconnect one peer from another identified by a
+given pubKey. In the case that we currently have a pending or active channel
+with the target peer, then this action will be not be allowed.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="f879dedc-674b-488c-a99f-76c826e55986" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

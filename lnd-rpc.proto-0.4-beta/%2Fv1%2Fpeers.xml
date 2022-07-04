@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/peers" path="/v1/peers" id="75e7b67b-18f1-47db-90fa-1885c61f83b0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="75e7b67b-18f1-47db-90fa-1885c61f83b0fileName">%2Fv1%2Fpeers</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ListPeers" id="3f41851f-f552-4a5d-8862-12717b892531" method="GET">
+    <con:description>* lncli: `listpeers`
+ListPeers returns a verbose listing of all currently active peers.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "peers" : [ {
+    "pub_key" : "string",
+    "address" : "string",
+    "bytes_sent" : "string",
+    "bytes_recv" : "string",
+    "sat_sent" : "string",
+    "sat_recv" : "string",
+    "inbound" : true,
+    "ping_time" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="cb2c9487-10b8-49bc-94b0-e86457cf95b9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="ConnectPeer" id="5ffc86ee-7b3c-4ff1-8365-acc4bbf70042" method="POST">
+    <con:description>* lncli: `connect`
+ConnectPeer attempts to establish a connection to a remote peer. This is at
+the networking level, and is used for communication between nodes. This is
+distinct from establishing a channel with a peer.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "addr" : {
+    "pubkey" : "string",
+    "host" : "string"
+  },
+  "perm" : true
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="40eb0264-4619-45d7-97e2-1b54a0e54bcc" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:request>{\r
+  "addr" : {\r
+    "pubkey" : "string",\r
+    "host" : "string"\r
+  },\r
+  "perm" : true\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

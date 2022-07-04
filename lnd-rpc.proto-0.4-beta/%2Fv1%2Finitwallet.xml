@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/initwallet" path="/v1/initwallet" id="41084b1c-cd82-4f55-bb7c-afa4657e0204" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="41084b1c-cd82-4f55-bb7c-afa4657e0204fileName">%2Fv1%2Finitwallet</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="InitWallet" id="4a59c883-9b39-4240-83ee-d111f770ae08" method="POST">
+    <con:description>In the case of a recovery scenario, the user can also specify their aezeed
+mnemonic and passphrase. If set, then the daemon will use this prior state
+to initialize its internal wallet.
+
+Alternatively, this can be used along with the GenSeed RPC to obtain a
+seed, then present it to the user. Once it has been verified by the user,
+the seed can be fed into this RPC in order to commit the new wallet.
+* 
+InitWallet is used when lnd is starting up for the first time to fully
+initialize the daemon and its internal wallet. At the very least a wallet
+password must be provided. This will be used to encrypt sensitive material
+on disk.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "wallet_password" : "string",
+  "cipher_seed_mnemonic" : [ "string" ],
+  "aezeed_passphrase" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="351ad5e0-6e8c-43a6-ba8e-144fab5de6ea" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:request>{\r
+  "wallet_password" : "string",\r
+  "cipher_seed_mnemonic" : [ "string" ],\r
+  "aezeed_passphrase" : "string"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

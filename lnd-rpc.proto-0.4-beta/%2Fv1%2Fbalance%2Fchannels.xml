@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/balance/channels" path="/v1/balance/channels" id="db7dbf8e-a59e-4f0c-b077-4e5be751078c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="db7dbf8e-a59e-4f0c-b077-4e5be751078cfileName">%2Fv1%2Fbalance%2Fchannels</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ChannelBalance" id="57d2db17-f8ec-438f-b03c-9a377ea3fa3f" method="GET">
+    <con:description>* lncli: `channelbalance`
+ChannelBalance returns the total funds available across all open channels
+in satoshis.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "balance" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="4090d378-dc4e-47de-a136-a3c1c9501245" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/invoices" path="/v1/invoices" id="deb0efb4-be3b-4013-9577-569cceaf31f2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="deb0efb4-be3b-4013-9577-569cceaf31f2fileName">%2Fv1%2Finvoices</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ListInvoices" id="cba77b7b-c4f9-4723-a874-c9d7881c7ca4" method="GET">
+    <con:description>* lncli: `listinvoices`
+ListInvoices returns a list of all the invoices currently stored within the
+database. Any active debug invoices are ignored.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>pending_only</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>boolean</con:dataType>
+        <con:description>/ Toggles if all invoices should be returned, or only those that are currently unsettled.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "invoices" : [ {
+    "memo" : "string",
+    "receipt" : "string",
+    "r_preimage" : "string",
+    "r_hash" : "string",
+    "value" : "string",
+    "settled" : true,
+    "creation_date" : "string",
+    "settle_date" : "string",
+    "payment_request" : "string",
+    "description_hash" : "string",
+    "expiry" : "string",
+    "fallback_addr" : "string",
+    "cltv_expiry" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="735ec5f7-141a-4905-ba32-9a5c23fb213a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="AddInvoice" id="e7e5d870-85b0-4bd1-ae7f-451c56645c7b" method="POST">
+    <con:description>* lncli: `addinvoice`
+AddInvoice attempts to add a new invoice to the invoice database. Any
+duplicated invoices are rejected, therefore all invoices *must* have a
+unique payment preimage.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "memo" : "string",
+  "receipt" : "string",
+  "r_preimage" : "string",
+  "r_hash" : "string",
+  "value" : "string",
+  "settled" : true,
+  "creation_date" : "string",
+  "settle_date" : "string",
+  "payment_request" : "string",
+  "description_hash" : "string",
+  "expiry" : "string",
+  "fallback_addr" : "string",
+  "cltv_expiry" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "r_hash" : "string",
+  "payment_request" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="ed43f380-643e-432e-a7b2-589f53cdee75" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:request>{\r
+  "memo" : "string",\r
+  "receipt" : "string",\r
+  "r_preimage" : "string",\r
+  "r_hash" : "string",\r
+  "value" : "string",\r
+  "settled" : true,\r
+  "creation_date" : "string",\r
+  "settle_date" : "string",\r
+  "payment_request" : "string",\r
+  "description_hash" : "string",\r
+  "expiry" : "string",\r
+  "fallback_addr" : "string",\r
+  "cltv_expiry" : "string"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

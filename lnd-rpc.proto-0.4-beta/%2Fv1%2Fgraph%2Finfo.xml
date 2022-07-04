@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/graph/info" path="/v1/graph/info" id="9d6c789a-dd75-4c1b-a353-48792608f443" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9d6c789a-dd75-4c1b-a353-48792608f443fileName">%2Fv1%2Fgraph%2Finfo</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetNetworkInfo" id="28efe2e7-0262-4b1c-b88b-b374837e3ee5" method="GET">
+    <con:description>* lncli: `getnetworkinfo`
+GetNetworkInfo returns some basic stats about the known channel graph from
+the point of view of the node.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "graph_diameter" : 0,
+  "avg_out_degree" : 1.100000023841858,
+  "max_out_degree" : 0,
+  "num_nodes" : 0,
+  "num_channels" : 0,
+  "total_network_capacity" : "string",
+  "avg_channel_size" : 1.100000023841858,
+  "min_channel_size" : "string",
+  "max_channel_size" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="49972fb6-2b05-41d7-8833-2d9467a1b9a5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

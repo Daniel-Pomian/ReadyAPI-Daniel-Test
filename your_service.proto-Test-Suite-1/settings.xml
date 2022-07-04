@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="e32ac69a-9a90-4bd9-8926-c1cf1d0d1d7a" name="your_service.proto Test Suite 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test suite generated for the REST service [your_service.proto]</con:description>
+  <con:settings>
+    <con:setting id="e32ac69a-9a90-4bd9-8926-c1cf1d0d1d7afileName">your_service.proto-Test-Suite-1</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

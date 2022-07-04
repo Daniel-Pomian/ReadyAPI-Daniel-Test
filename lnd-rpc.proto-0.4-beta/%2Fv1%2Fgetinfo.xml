@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/getinfo" path="/v1/getinfo" id="a9d3e382-ca2d-4b87-9290-2d0bf2bd9099" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a9d3e382-ca2d-4b87-9290-2d0bf2bd9099fileName">%2Fv1%2Fgetinfo</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetInfo" id="9dbc7d14-f3cf-4a16-abf9-46418b35cb5b" method="GET">
+    <con:description>* lncli: `getinfo`
+GetInfo returns general information concerning the lightning node including
+it's identity pubkey, alias, the chains it is connected to, and information
+concerning the number of open+pending channels.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "identity_pubkey" : "string",
+  "alias" : "string",
+  "num_pending_channels" : 0,
+  "num_active_channels" : 0,
+  "num_peers" : 0,
+  "block_height" : 0,
+  "block_hash" : "string",
+  "synced_to_chain" : true,
+  "testnet" : true,
+  "chains" : [ "string" ],
+  "uris" : [ "string" ],
+  "best_header_timestamp" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="1b917a1d-a149-4b71-b0bd-803dd245cfb5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

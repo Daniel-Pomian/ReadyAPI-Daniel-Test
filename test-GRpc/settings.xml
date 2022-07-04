@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="cd669b07-6bf0-451e-90fe-960f8e09b5c1" name="test GRpc" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" definitionUrl="https://api.swaggerhub.com/apis/Novosit/GRPC/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>prueba</con:description>
+  <con:settings>
+    <con:setting id="cd669b07-6bf0-451e-90fe-960f8e09b5c1fileName">test-GRpc</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="https://api.swaggerhub.com/apis/Novosit/GRPC/1">
+    <con:part>
+      <con:url>https://api.swaggerhub.com/apis/Novosit/GRPC/1</con:url>
+      <con:content>{"openapi":"3.0.0","info":{"version":"1","title":"test GRpc","description":"prueba"},"paths":{},"servers":[{"description":"SwaggerHub API Auto Mocking","url":"https://virtserver.swaggerhub.com/Novosit/GRPC/1"}]}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>https://virtserver.swaggerhub.com/Novosit/GRPC/1</con:endpoint>
+  </con:endpoints>
+</con:interface>

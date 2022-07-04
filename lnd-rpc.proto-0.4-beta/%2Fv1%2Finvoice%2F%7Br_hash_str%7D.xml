@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/invoice/{r_hash_str}" path="/v1/invoice/{r_hash_str}" id="83fd0dcd-2dd1-4f9c-8307-d9cd5e78293f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="83fd0dcd-2dd1-4f9c-8307-d9cd5e78293ffileName">%2Fv1%2Finvoice%2F%7Br_hash_str%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>r_hash_str</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="LookupInvoice" id="6fac7f93-fe2f-4ccc-8abc-2a8a2e7307f2" method="GET">
+    <con:description>* lncli: `lookupinvoice`
+LookupInvoice attempts to look up an invoice according to its payment hash.
+The passed payment hash *must* be exactly 32 bytes, if not, an error is
+returned.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>r_hash</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>/ The payment hash of the invoice to be looked up.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "memo" : "string",
+  "receipt" : "string",
+  "r_preimage" : "string",
+  "r_hash" : "string",
+  "value" : "string",
+  "settled" : true,
+  "creation_date" : "string",
+  "settle_date" : "string",
+  "payment_request" : "string",
+  "description_hash" : "string",
+  "expiry" : "string",
+  "fallback_addr" : "string",
+  "cltv_expiry" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="d3cd6793-b586-4976-a513-e2cb423194d3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

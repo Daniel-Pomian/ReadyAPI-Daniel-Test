@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/rkk/saveCustomer" path="/v1/rkk/saveCustomer" id="5dce14c1-7540-4d63-878c-14a689117c71" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5dce14c1-7540-4d63-878c-14a689117c71fileName">%2Fv1%2Frkk%2FsaveCustomer</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SaveCustomer" id="cb24c3fc-8ada-4c39-838b-644d282ff1a4" method="POST">
+    <con:description>Save customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "customer" : {
+    "lastname" : "string",
+    "firstname" : "string",
+    "middlename" : "string",
+    "sex" : "string",
+    "dateOfBirthday" : "string",
+    "contact" : {
+      "type" : 0,
+      "phone" : "string"
+    },
+    "id" : {
+      "idNumber" : "string",
+      "idSeria" : "string",
+      "dateIssue" : "string"
+    },
+    "customerId" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : true,
+  "customerId" : "string",
+  "error" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="dc1658ee-f4dc-4800-9d1f-bd96fc3dca66" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://62.76.45.221:9090</con:endpoint>
+      <con:request>{\r
+  "customer" : {\r
+    "lastname" : "string",\r
+    "firstname" : "string",\r
+    "middlename" : "string",\r
+    "sex" : "string",\r
+    "dateOfBirthday" : "string",\r
+    "contact" : {\r
+      "type" : 0,\r
+      "phone" : "string"\r
+    },\r
+    "id" : {\r
+      "idNumber" : "string",\r
+      "idSeria" : "string",\r
+      "dateIssue" : "string"\r
+    },\r
+    "customerId" : "string"\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

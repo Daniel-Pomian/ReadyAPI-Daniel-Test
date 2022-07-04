@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/unlockwallet" path="/v1/unlockwallet" id="8132bc0b-af2d-48ff-87d1-e9635af82ef4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8132bc0b-af2d-48ff-87d1-e9635af82ef4fileName">%2Fv1%2Funlockwallet</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="UnlockWallet" id="a2c5a18a-c9c4-458d-81a1-09397e5fa7bb" method="POST">
+    <con:description>* lncli: `unlock`
+UnlockWallet is used at startup of lnd to provide a password to unlock
+the wallet database.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "wallet_password" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="1353fd23-2d27-4695-94f1-fad7f16bc11b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:request>{\r
+  "wallet_password" : "string"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

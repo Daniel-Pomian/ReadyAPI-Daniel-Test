@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/invoices/subscribe" path="/v1/invoices/subscribe" id="4e9955d6-7672-4ba9-83be-df42b2ee26b0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4e9955d6-7672-4ba9-83be-df42b2ee26b0fileName">%2Fv1%2Finvoices%2Fsubscribe</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SubscribeInvoices" id="36a7f1cd-13c7-48e8-94a3-757fca424e24" method="GET">
+    <con:description>*
+SubscribeInvoices returns a uni-directional stream (sever -> client) for
+notifying the client of newly added/settled invoices.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "memo" : "string",
+  "receipt" : "string",
+  "r_preimage" : "string",
+  "r_hash" : "string",
+  "value" : "string",
+  "settled" : true,
+  "creation_date" : "string",
+  "settle_date" : "string",
+  "payment_request" : "string",
+  "description_hash" : "string",
+  "expiry" : "string",
+  "fallback_addr" : "string",
+  "cltv_expiry" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="e432243a-e476-4e1c-bc2a-c15f86919889" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

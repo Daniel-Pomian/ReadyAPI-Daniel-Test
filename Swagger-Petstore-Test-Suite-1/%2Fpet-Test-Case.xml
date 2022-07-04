@@ -144,6 +144,14 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="268f7be3-a3c5-43e6-ad08-8be681c96320">
+    <con:settings/>
+    <con:config>
+      <script>one line
+second line
+third line</script>
+    </con:config>
+  </con:testStep>
   <con:properties/>
   <con:reportParameters/>
   <con:environmentSpec>

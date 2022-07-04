@@ -7,7 +7,7 @@
   <con:testStep type="restrequest" name="Request 1" id="9868967b-f692-4c97-a8e5-472acf249af9">
     <con:settings/>
     <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="a431fcda-8ae4-459e-bada-0cdfc9b1c621" mediaType="application/json" postQueryString="false">
+      <con:restRequest name="Request 1" id="a431fcda-8ae4-459e-bada-0cdfc9b1c621" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request>{\r
@@ -28,7 +28,6 @@
           <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">
@@ -41,7 +40,7 @@
   <con:testStep type="restrequest" name="Request 2" id="82c15ff0-0844-4ad8-8530-6762c52cd74d">
     <con:settings/>
     <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 2" id="dad4aa3d-8139-4e74-8cc2-2f4ae8f8e4a2" mediaType="application/xml" postQueryString="false">
+      <con:restRequest name="Request 2" id="dad4aa3d-8139-4e74-8cc2-2f4ae8f8e4a2" mediaType="application/xml">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request><![CDATA[<Pet>\r
@@ -66,7 +65,6 @@
           <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">
@@ -79,7 +77,7 @@
   <con:testStep type="restrequest" name="Request 1 2" id="dd9ef66d-d678-460d-817c-fa74615cc912">
     <con:settings/>
     <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="updatePet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1 2" id="bebfb57c-12f4-478b-83df-36ad8fd3fa60" mediaType="application/json" postQueryString="false">
+      <con:restRequest name="Request 1 2" id="bebfb57c-12f4-478b-83df-36ad8fd3fa60" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request>{\r
@@ -100,7 +98,6 @@
           <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="c223a23a-9828-448e-a0d1-73a02cde244c">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="7b6e08bf-039a-4481-8289-de8759978be9" name="/books" path="/books" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="7b6e08bf-039a-4481-8289-de8759978be9" name="/books" path="/books" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7b6e08bf-039a-4481-8289-de8759978be9fileName">%2Fbooks</con:setting>
   </con:settings>

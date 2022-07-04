@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="5dce14c1-7540-4d63-878c-14a689117c71" name="/v1/rkk/saveCustomer" path="/v1/rkk/saveCustomer" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="5dce14c1-7540-4d63-878c-14a689117c71" name="/v1/rkk/saveCustomer" path="/v1/rkk/saveCustomer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="5dce14c1-7540-4d63-878c-14a689117c71fileName">%2Fv1%2Frkk%2FsaveCustomer</con:setting>
   </con:settings>

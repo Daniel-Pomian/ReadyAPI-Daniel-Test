@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="8132bc0b-af2d-48ff-87d1-e9635af82ef4" name="/v1/unlockwallet" path="/v1/unlockwallet" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="8132bc0b-af2d-48ff-87d1-e9635af82ef4" name="/v1/unlockwallet" path="/v1/unlockwallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="8132bc0b-af2d-48ff-87d1-e9635af82ef4fileName">%2Fv1%2Funlockwallet</con:setting>
   </con:settings>

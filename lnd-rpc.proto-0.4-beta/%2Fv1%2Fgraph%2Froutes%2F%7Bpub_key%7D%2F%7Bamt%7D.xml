@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="fae4d35d-5445-4bb4-b10f-6a28c5eccf4e" name="/v1/graph/routes/{pub_key}/{amt}" path="/v1/graph/routes/{pub_key}/{amt}" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="fae4d35d-5445-4bb4-b10f-6a28c5eccf4e" name="/v1/graph/routes/{pub_key}/{amt}" path="/v1/graph/routes/{pub_key}/{amt}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="fae4d35d-5445-4bb4-b10f-6a28c5eccf4efileName">%2Fv1%2Fgraph%2Froutes%2F%7Bpub_key%7D%2F%7Bamt%7D</con:setting>
   </con:settings>

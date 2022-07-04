@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="4fd008f6-40d8-4b5e-8d04-ba4dba9289de" name="/store/order/{orderId}" path="/store/order/{orderId}" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="4fd008f6-40d8-4b5e-8d04-ba4dba9289de" name="/store/order/{orderId}" path="/store/order/{orderId}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="4fd008f6-40d8-4b5e-8d04-ba4dba9289defileName">%2Fstore%2Forder%2F%7BorderId%7D</con:setting>
   </con:settings>

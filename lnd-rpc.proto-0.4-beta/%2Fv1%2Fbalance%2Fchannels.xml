@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="db7dbf8e-a59e-4f0c-b077-4e5be751078c" name="/v1/balance/channels" path="/v1/balance/channels" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="db7dbf8e-a59e-4f0c-b077-4e5be751078c" name="/v1/balance/channels" path="/v1/balance/channels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="db7dbf8e-a59e-4f0c-b077-4e5be751078cfileName">%2Fv1%2Fbalance%2Fchannels</con:setting>
   </con:settings>

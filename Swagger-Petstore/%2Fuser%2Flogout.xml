@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="31e5e224-d639-4b04-b6f7-7f014cfe4897" name="/user/logout" path="/user/logout" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="31e5e224-d639-4b04-b6f7-7f014cfe4897" name="/user/logout" path="/user/logout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="31e5e224-d639-4b04-b6f7-7f014cfe4897fileName">%2Fuser%2Flogout</con:setting>
   </con:settings>

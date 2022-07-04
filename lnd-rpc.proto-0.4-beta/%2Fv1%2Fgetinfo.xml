@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="a9d3e382-ca2d-4b87-9290-2d0bf2bd9099" name="/v1/getinfo" path="/v1/getinfo" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="a9d3e382-ca2d-4b87-9290-2d0bf2bd9099" name="/v1/getinfo" path="/v1/getinfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="a9d3e382-ca2d-4b87-9290-2d0bf2bd9099fileName">%2Fv1%2Fgetinfo</con:setting>
   </con:settings>

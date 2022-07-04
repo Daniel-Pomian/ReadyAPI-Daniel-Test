@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="dee875c0-f34a-4543-a460-f22ba96b9e1b" name="/pet/findByTags" path="/pet/findByTags" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="dee875c0-f34a-4543-a460-f22ba96b9e1b" name="/pet/findByTags" path="/pet/findByTags" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="dee875c0-f34a-4543-a460-f22ba96b9e1bfileName">%2Fpet%2FfindByTags</con:setting>
   </con:settings>

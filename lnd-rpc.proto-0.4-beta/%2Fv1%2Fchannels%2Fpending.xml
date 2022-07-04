@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="268174d4-cda5-4def-b838-2a7c732ee946" name="/v1/channels/pending" path="/v1/channels/pending" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="268174d4-cda5-4def-b838-2a7c732ee946" name="/v1/channels/pending" path="/v1/channels/pending" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="268174d4-cda5-4def-b838-2a7c732ee946fileName">%2Fv1%2Fchannels%2Fpending</con:setting>
   </con:settings>

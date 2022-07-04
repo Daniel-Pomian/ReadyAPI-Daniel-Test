@@ -148,8 +148,16 @@
     <con:settings/>
     <con:config>
       <script>one line
+
+something new
+
 second line
-third line</script>
+
+
+third line
+
+
+forth line</script>
     </con:config>
   </con:testStep>
   <con:properties/>

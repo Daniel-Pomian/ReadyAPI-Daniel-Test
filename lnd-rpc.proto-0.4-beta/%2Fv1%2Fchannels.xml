@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="a38061ed-be5e-4690-8c9f-484ad4fcee14" name="/v1/channels" path="/v1/channels" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="a38061ed-be5e-4690-8c9f-484ad4fcee14" name="/v1/channels" path="/v1/channels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="a38061ed-be5e-4690-8c9f-484ad4fcee14fileName">%2Fv1%2Fchannels</con:setting>
   </con:settings>

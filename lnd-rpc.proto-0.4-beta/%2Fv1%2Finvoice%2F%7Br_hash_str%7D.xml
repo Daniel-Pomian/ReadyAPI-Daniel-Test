@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="83fd0dcd-2dd1-4f9c-8307-d9cd5e78293f" name="/v1/invoice/{r_hash_str}" path="/v1/invoice/{r_hash_str}" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="83fd0dcd-2dd1-4f9c-8307-d9cd5e78293f" name="/v1/invoice/{r_hash_str}" path="/v1/invoice/{r_hash_str}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="83fd0dcd-2dd1-4f9c-8307-d9cd5e78293ffileName">%2Fv1%2Finvoice%2F%7Br_hash_str%7D</con:setting>
   </con:settings>

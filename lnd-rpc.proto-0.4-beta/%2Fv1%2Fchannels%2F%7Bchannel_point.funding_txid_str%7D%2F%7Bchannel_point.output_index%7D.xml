@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="2abc9d3c-874c-4372-a31e-02f4548c3b38" name="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" path="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="2abc9d3c-874c-4372-a31e-02f4548c3b38" name="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" path="/v1/channels/{channel_point.funding_txid_str}/{channel_point.output_index}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="2abc9d3c-874c-4372-a31e-02f4548c3b38fileName">%2Fv1%2Fchannels%2F%7Bchannel_point.funding_txid_str%7D%2F%7Bchannel_point.output_index%7D</con:setting>
   </con:settings>

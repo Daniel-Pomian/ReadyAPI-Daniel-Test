@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="e8271d3a-083c-4ade-8d5b-58793d6f45ea" name="/v1/payreq/{pay_req}" path="/v1/payreq/{pay_req}" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="e8271d3a-083c-4ade-8d5b-58793d6f45ea" name="/v1/payreq/{pay_req}" path="/v1/payreq/{pay_req}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="e8271d3a-083c-4ade-8d5b-58793d6f45eafileName">%2Fv1%2Fpayreq%2F%7Bpay_req%7D</con:setting>
   </con:settings>

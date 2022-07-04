@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="78da1b60-db3c-44df-b9c8-68ef649fd217" name="/v1/peers/{pub_key}" path="/v1/peers/{pub_key}" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="78da1b60-db3c-44df-b9c8-68ef649fd217" name="/v1/peers/{pub_key}" path="/v1/peers/{pub_key}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="78da1b60-db3c-44df-b9c8-68ef649fd217fileName">%2Fv1%2Fpeers%2F%7Bpub_key%7D</con:setting>
   </con:settings>

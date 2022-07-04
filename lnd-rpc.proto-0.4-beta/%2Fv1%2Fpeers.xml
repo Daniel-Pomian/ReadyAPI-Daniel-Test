@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="75e7b67b-18f1-47db-90fa-1885c61f83b0" name="/v1/peers" path="/v1/peers" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="75e7b67b-18f1-47db-90fa-1885c61f83b0" name="/v1/peers" path="/v1/peers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="75e7b67b-18f1-47db-90fa-1885c61f83b0fileName">%2Fv1%2Fpeers</con:setting>
   </con:settings>

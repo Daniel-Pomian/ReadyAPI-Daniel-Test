@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="41084b1c-cd82-4f55-bb7c-afa4657e0204" name="/v1/initwallet" path="/v1/initwallet" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="41084b1c-cd82-4f55-bb7c-afa4657e0204" name="/v1/initwallet" path="/v1/initwallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="41084b1c-cd82-4f55-bb7c-afa4657e0204fileName">%2Fv1%2Finitwallet</con:setting>
   </con:settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="12f87836-ea3a-4b2b-bd9e-9eb1eebcecc9" name="/pet/findByStatus" path="/pet/findByStatus" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="12f87836-ea3a-4b2b-bd9e-9eb1eebcecc9" name="/pet/findByStatus" path="/pet/findByStatus" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="12f87836-ea3a-4b2b-bd9e-9eb1eebcecc9fileName">%2Fpet%2FfindByStatus</con:setting>
   </con:settings>

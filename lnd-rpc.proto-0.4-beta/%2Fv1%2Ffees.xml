@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="1a57a0d4-af9a-4136-9d04-fce3aff2baa7" name="/v1/fees" path="/v1/fees" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="1a57a0d4-af9a-4136-9d04-fce3aff2baa7" name="/v1/fees" path="/v1/fees" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="1a57a0d4-af9a-4136-9d04-fce3aff2baa7fileName">%2Fv1%2Ffees</con:setting>
   </con:settings>

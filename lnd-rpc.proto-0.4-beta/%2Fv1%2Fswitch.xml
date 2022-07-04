@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="deba8d3a-3334-4f8f-aec3-a0dcf87d7887" name="/v1/switch" path="/v1/switch" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="deba8d3a-3334-4f8f-aec3-a0dcf87d7887" name="/v1/switch" path="/v1/switch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="deba8d3a-3334-4f8f-aec3-a0dcf87d7887fileName">%2Fv1%2Fswitch</con:setting>
   </con:settings>

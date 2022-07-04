@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="637dca76-c1fa-4c56-b91e-c700f72e61a1" name="/v1/example/echo" path="/v1/example/echo" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="637dca76-c1fa-4c56-b91e-c700f72e61a1" name="/v1/example/echo" path="/v1/example/echo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="637dca76-c1fa-4c56-b91e-c700f72e61a1fileName">%2Fv1%2Fexample%2Fecho</con:setting>
   </con:settings>

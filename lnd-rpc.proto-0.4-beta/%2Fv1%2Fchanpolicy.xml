@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="d4ac5cd7-5008-47a3-8478-558ced77f18d" name="/v1/chanpolicy" path="/v1/chanpolicy" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="d4ac5cd7-5008-47a3-8478-558ced77f18d" name="/v1/chanpolicy" path="/v1/chanpolicy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d4ac5cd7-5008-47a3-8478-558ced77f18dfileName">%2Fv1%2Fchanpolicy</con:setting>
   </con:settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="a7685048-06b8-420a-bd80-abfa5284543e" name="/user/createWithArray" path="/user/createWithArray" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="a7685048-06b8-420a-bd80-abfa5284543e" name="/user/createWithArray" path="/user/createWithArray" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="a7685048-06b8-420a-bd80-abfa5284543efileName">%2Fuser%2FcreateWithArray</con:setting>
   </con:settings>

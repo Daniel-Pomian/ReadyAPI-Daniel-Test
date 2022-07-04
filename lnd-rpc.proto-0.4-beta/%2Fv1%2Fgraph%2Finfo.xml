@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="9d6c789a-dd75-4c1b-a353-48792608f443" name="/v1/graph/info" path="/v1/graph/info" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="9d6c789a-dd75-4c1b-a353-48792608f443" name="/v1/graph/info" path="/v1/graph/info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="9d6c789a-dd75-4c1b-a353-48792608f443fileName">%2Fv1%2Fgraph%2Finfo</con:setting>
   </con:settings>

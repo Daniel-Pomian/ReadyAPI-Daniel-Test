@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="e3efd072-c68d-4d10-a540-6c96d299b66d" name="/v1/graph/edge/{chan_id}" path="/v1/graph/edge/{chan_id}" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="e3efd072-c68d-4d10-a540-6c96d299b66d" name="/v1/graph/edge/{chan_id}" path="/v1/graph/edge/{chan_id}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="e3efd072-c68d-4d10-a540-6c96d299b66dfileName">%2Fv1%2Fgraph%2Fedge%2F%7Bchan_id%7D</con:setting>
   </con:settings>
